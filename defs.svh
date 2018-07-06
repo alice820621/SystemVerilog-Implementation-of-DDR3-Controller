@@ -1,11 +1,13 @@
+//a given parameter for ddr3.v
+
 // `include "sg187.v"
-  `include "sg093.v"
-  //`include "intf.svh"
+`include "sg093.v"
+//`include "intf.svh"
 //controller states /configuration params 
 //controller states
 
- //parameter des = 1,	//deselect
- //nop = 2;	//no operation
+//parameter des = 1,	//deselect
+//nop = 2;	//no operation
  
 enum integer{zero,nop =1,des}nop_des;
  
