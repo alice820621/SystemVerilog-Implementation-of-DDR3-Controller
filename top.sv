@@ -1,5 +1,4 @@
-//a given parameter for ddr3.v
-
+//top module
 
 //  `include "1024Mb_ddr3_parameters.svh"
 
@@ -161,6 +160,3 @@ end
 //    $dumpvars (0, top);
 //end
 endmodule :top
-
-
-
