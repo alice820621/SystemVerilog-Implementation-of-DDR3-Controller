@@ -1,5 +1,5 @@
-//controller states /configuration params 
-//controller states
+//a parameter for ddr3_controller.sv, controller states
+
 //typedef enum logic [5:0]{
 parameter power_up = 0, //power up, begin initialization
 initialize = 1,
