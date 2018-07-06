@@ -1,11 +1,10 @@
-
-//interface to connect memory and controller
+//an interface for ddr3_controller.sv and ddr3.v
 
 interface intf;
-   //`include "sg187.v"
-  // `include "1024Mb_ddr3_parameters.vh"
-   `include "sg093.v"
- //  `include "defs.svh"
+//`include "sg187.v"
+//`include "1024Mb_ddr3_parameters.vh"
+`include "sg093.v"
+//`include "defs.svh"
    logic                		rst_n;
    logic                		ck;
    logic                		ck_n;
@@ -86,19 +85,19 @@ endinterface
 
 interface iftb;
 //`include "defs.svh"
- //  `include "sg187.v"
+//  `include "sg187.v"
 // `include "st_defs.svh"
- // `include "1024Mb_ddr3_parameters.vh" 
-  `include "sg093.v"
-  /*THIS IS THE INTERFACE BETWEEN TESTBENCH AND CONTROLLER*/ 
-	reg [BA_BITS-1:0]  ba;
+// `include "1024Mb_ddr3_parameters.vh" 
+`include "sg093.v"
+/*THIS IS THE INTERFACE BETWEEN TESTBENCH AND CONTROLLER*/ 
+  reg [BA_BITS-1:0]  ba;
   reg [COL_BITS-1:0] col;
   reg [ROW_BITS-1:0] row;
   reg [ADDR_BITS-1:0] addr;
-	logic [4:0] prev_cmd;
-	logic [4:0] cmd;
-	logic [1:0] wr_cmd; //
-	logic [1:0] rd_cmd;
+  logic [4:0] prev_cmd;
+  logic [4:0] cmd;
+  logic [1:0] wr_cmd; //
+  logic [1:0] rd_cmd;
   parameter ap_on = 1'b1;  //enable autoprecharge
   parameter ap_off = 1'b0; //disable auto precharge
   parameter bc_on = 1'b1; 
