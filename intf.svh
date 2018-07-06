@@ -1,4 +1,4 @@
-//an interface for ddr3_controller.sv and ddr3.v
+//an interface to connect ddr3_controller.sv and ddr3.v
 
 interface intf;
 //`include "sg187.v"
