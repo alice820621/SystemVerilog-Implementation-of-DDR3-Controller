@@ -1,3 +1,5 @@
+//a ddr3 memory controller
+
 `timescale 1ps/1ps
 
  `include "intf.svh"
