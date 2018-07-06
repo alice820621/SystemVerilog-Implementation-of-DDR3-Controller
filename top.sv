@@ -1,4 +1,7 @@
-  //  `include "1024Mb_ddr3_parameters.svh"
+//a given parameter for ddr3.v
+
+
+//  `include "1024Mb_ddr3_parameters.svh"
 
 // `include "sg187.v"
 /*`include "defs.svh"
