@@ -1,3 +1,5 @@
+//a given parameter for ddr3.v
+
 /****************************************************************************************
 *
 *   Disclaimer   This software code and all associated documentation, comments or other 
